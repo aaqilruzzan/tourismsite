@@ -1,0 +1,321 @@
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+text-decoration:none;
+list-style:none;
+
+}
+:root{
+
+--bg-color:#222327;
+--main-color:#29fd53;
+}
+
+
+body{
+font-family: 'Poppins', sans-serif;
+min-height:var(--bg-color);
+color:var(--text-color);
+background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(background.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+}
+nav .color{
+font-family: "Poppins",sans-serif;
+color:var(--main-color);
+}
+
+h4{
+font-family: "Pacifico", cursive;
+}
+
+#header nav{
+
+position:fixed;
+z-index:1;
+width:100%;
+top:0;
+right:0;
+font-size:30px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:black;
+padding:28px 5%;
+color:white;
+
+}
+
+
+#navbar{
+display:flex;
+white-space:nowrap;
+font-family: Arial, sans-serif; 
+
+}
+
+#navbar a{
+
+color:var(--text-color);
+font-size:1.3rem;
+padding:5px 0;
+margin:30px;
+
+}
+#navbar a:hover{
+color:var(--main-color);
+
+}
+
+#navbar a.active{
+
+color:var(--main-color);
+
+}
+
+.navRight{
+
+display:flex;
+align-items:center;
+
+
+}
+
+
+header {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+main {
+  padding: 20px;
+}
+
+
+#packages ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+#packages li {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  border-radius: 5px;
+   background-color:#94b8b8;
+   justify-content: center;
+}
+
+#packages h3 {
+  margin: 0;
+  
+}
+
+#packages button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#packages button:hover {
+  background-color: #555;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 59%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+}
+.image-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+}
+
+
+
+
+
+
+label {
+display: inline-block;
+width: 150px;
+margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+width: 300px;
+padding: 5px;
+font-size: 16px;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin-bottom: 10px;
+}
+
+button {
+padding: 10px;
+font-size: 16px;
+border-radius: 5px;
+background-color: #006600;
+color: #fff;
+border: none;
+cursor: pointer;
+margin-right: 10px;
+}
+
+.buttons {
+text-align: center;
+}
+
+button[type="button"]:hover {
+background-color: #006600;
+}
+
+
+  #invoice-container {
+  border: 2px solid #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.invoice-hidden {
+  display: none;
+}
+
+	select {
+	height: 40px;
+	}
+
+	input[type="number"] {
+	width: 60px;
+	text-align: center;
+	}
+
+ .package-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+ .cart {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+	background-color: #f0f0f0;
+  }
+  .payment-form {
+	
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+	background-color: #f0f0f0;
+	
+  }
+  
+.detail {
+  font-family: Arial, sans-serif; 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  background-color: #e0ebeb ;
+  
+  
+}
+
+.detail p {
+  font-weight: bold; 
+  font-size: 18px; 
+  margin-bottom: 10px; 
+  
+}
+footer{
+
+text-align:center;
+width:100%;
+padding:18px;
+background-color: black;
+color:white;
+
+}
+
+
+
+footer h1 span{
+font-family: "Poppins",sans-serif;
+color:var(--main-color);
+
+}
+footer h1{
+  font-size: 38px;
+  font-family:"Pacifico", cursive;
+  margin-bottom: 20px;
+  }
+
+
+footer .copyright{
+
+padding-bottom:30px;
+
+
+}
+
+
+footer .back {
+padding: 10px;
+background: var(--main-color);
+color: black;
+letter-spacing: 3px;
+border-radius: 25px;
+
+
+}
